@@ -22,12 +22,12 @@ define(function (require) {
     function off(n) {
         setTimeout(function() {
             $('button[value="' + n + '"]').removeClass('active');
-        }, 800);
+        }, 1000);
     }
 
     function activate(numbers) {
         console.log(numbers);
-        loopTimeout(0, numbers.length, 1000, function(i){
+        loopTimeout(0, numbers.length, 1300, function(i){
             $('button[value="' + numbers[i] + '"]').addClass('active');
             off(numbers[i]);
         });
