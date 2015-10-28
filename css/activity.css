@@ -1,0 +1,94 @@
+#main-toolbar #activity-button {
+  background-image: url(../activity/activity-icon.svg);
+}
+
+#canvas {
+  background-image: url(../img/back.jpg);
+  background-size: contain;
+}
+
+.element {
+  width: 80px;
+  position: absolute;
+}
+
+.points {
+  background-color: #000;
+  border: 2px solid #FFF;
+  width: 100px;
+  height: 50px;
+  font-size: 15px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.point-good {
+  color: #FFF;
+  width: 49%;
+  height: inherit;
+  border: 2px solid #FFF;
+}
+
+.point-bad {
+  color: #FFF;
+  width: 49%;
+  height: inherit;
+  border: 2px solid #FFF;
+}
+
+.hidden {
+	display: none;
+}
+
+.grid {
+	height: 100%;
+}
+
+.grid > div {
+	height: 100%;
+}
+
+.menu-button {
+	display: block;
+	width: 300px;
+	margin: 300px auto 0 auto;
+	border-radius: 5px;
+  background-color: #f8d09a;
+  color: #000;
+  font-weight: bold;
+  font-size: 24px;
+  box-shadow: 0 2px #eb893d;
+}
+
+.reload-button {
+  float: left;
+  padding: 5px 8px 5px 8px;
+  font-size: 20px;
+  margin: 0 5px 0 5px;
+}
+
+.reload {
+  font-size: 20px;
+  margin: 0 5px 0 5px;
+  position: absolute;
+  padding: 5px 8px 5px 8px;
+  bottom:5px;
+  margin-left: 10px;
+  font-size: 20px;
+  right: 5px;
+  float: none;
+}
+.button-number {
+  display: block;
+  width: 80px;
+  height: 120px;
+  background-color: transparent !important;
+  background: url('../img/off.png') no-repeat center center;
+  font-size: 40px;
+  color: #000;
+  font-weight: bold;
+}
+
+.active {
+  background: url('../img/on.png') no-repeat center center !important;
+}

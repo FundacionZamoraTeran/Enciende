@@ -1,0 +1,6 @@
+[Activity]
+name = Enciendete
+activity_version = 1
+bundle_id = org.sugarlabs.enciendete
+exec = sugar-activity-web
+icon = activity-icon
