@@ -26,7 +26,6 @@ define(function (require) {
     }
 
     function activate(numbers) {
-        console.log(numbers);
         loopTimeout(0, numbers.length, 1300, function(i){
             $('button[value="' + numbers[i] + '"]').addClass('active');
             off(numbers[i]);
@@ -49,9 +48,17 @@ define(function (require) {
         var n = parseInt(number);
         if (n === this.numbers[this.count]) {
             this.count++;
-            return true;
+            if (this.count >= this.numbers.length) {
+                this.count = 0;
+                return true;
+            }
+
+            else {
+                return false;
+            }
         }
         else {
+            this.count = 0;
             return false;
         }
     };
