@@ -87,8 +87,39 @@
   font-size: 40px;
   color: #000;
   font-weight: bold;
+  border: none !important;
+  outline: 0 !important;
+}
+
+.button-number:hover, .button-number:active {
+  border: none !important;
 }
 
 .active {
   background: url('../img/on.png') no-repeat center center !important;
+}
+
+#msg {
+  width: 400px;
+  margin: 10px auto 0 auto;
+}
+
+#msg h1 {
+  text-align: center;
+  color: #fff;
+}
+
+#win {
+  background-color: #8fbd1c;
+  position: relative;
+  z-index: 1000;
+  width: 500px;
+  height: 300px;
+  margin: 30px auto 0 auto;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  padding: 100px;
+  font-size: 20px;
+  border-radius: 20px;
 }
