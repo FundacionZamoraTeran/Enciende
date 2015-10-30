@@ -3,7 +3,7 @@
 }
 
 #canvas {
-  background-image: url(../img/back.png);
+  background: url(../img/back.png) no-repeat 0 0;
 }
 
 .element {
@@ -139,7 +139,7 @@
 }
 
 .element input {
-  width: 50px;
+  width: 100px;
   position: absolute;
   top: 50px;
   left: 25px;

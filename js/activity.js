@@ -203,9 +203,12 @@ define(function (require) {
                         win_msg();
                     }
                     else if(game.inputNumber($(this).attr('value'))) {
-                        numbers = game.randomNumber();
-                        activate(numbers);
                         good_msg();
+                        setTimeout(function() {
+                            numbers = game.randomNumber();
+                            activate(numbers);
+
+                        }, 2000);
                     }
                 });
                 $('.play-again').on('click', function(e) {
