@@ -93,7 +93,7 @@ define(function (require) {
     };
 
     MemoryGame.prototype.win = function() {
-        if (this.win_count >= 2) {
+        if (this.win_count >= 15) {
             return true;
         }
 
@@ -148,7 +148,7 @@ define(function (require) {
     };
 
     Series.prototype.win = function() {
-        if (this.win_count >= 2) {
+        if (this.win_count >= 15) {
             return true;
         }
         else {
