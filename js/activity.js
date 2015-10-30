@@ -191,8 +191,11 @@ define(function (require) {
 
             if (level === '1') {
                 var game = new MemoryGame();
-                var numbers = game.randomNumber();
-                activate(numbers);
+                var numbers = [];
+                $('.start').on('click', function(e) {
+                    numbers = game.randomNumber();
+                    activate(numbers);
+                });
                 $('.button-number').on('click', function(e) {
                     e.preventDefault();
                     if(game.win()) {

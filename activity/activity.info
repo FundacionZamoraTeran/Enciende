@@ -1,5 +1,5 @@
 [Activity]
-name = Enciendete
+name = Enciende
 activity_version = 1
 bundle_id = org.sugarlabs.enciendete
 exec = sugar-activity-web

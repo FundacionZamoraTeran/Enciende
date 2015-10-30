@@ -15,7 +15,7 @@
 
   <body>
     <div id="main-toolbar" class="toolbar">
-      <button class="toolbutton" id="activity-button" title="Enciendete"></button>
+      <button class="toolbutton" id="activity-button" disabled title="Enciendete"></button>
       <!-- Buttons with class="pull-right" will be right aligned -->
       <button class="toolbutton pull-right" id="stop-button" title="Stop"></button>
     </div>
@@ -26,10 +26,10 @@
       <!-- Init Elements -->
         <div id="menu" class="grid">
             <div class="col-1-2" id="menu-1">
-                <button class="menu-button" value="1">Nivel Uno</button>
+                <button class="menu-button" value="1">Memoriza secuencia</button>
             </div>
             <div class="col-1-2" id="menu-2">
-                <button class="menu-button" value="2">Nivel Dos</button>
+                <button class="menu-button" value="2">Completa secuencia</button>
             </div>
         </div>
         <div id="level-1" class="hidden">
@@ -42,37 +42,40 @@
                 <button class="reload-button">Volver a menu</button>
                 <button class="play-again">Jugar de nuevo</button>
             </div>
-            <div class="element" style="top: 25%; left: 35%;">
+            <div class="element" style="top: 25%; left: 30%;">
                 <button class="button-number" value="1">1</button>
             </div>
-            <div class="element" style="top: 20%; left: 50%;">
+            <div class="element" style="top: 20%; left: 45%;">
                 <button class="button-number" value="2">2</button>
             </div>
-            <div class="element" style="top: 25%; left: 65%;">
+            <div class="element" style="top: 25%; left: 60%;">
                 <button class="button-number" value="3">3</button>
             </div>
-            <div class="element" style="top: 40%; left: 30%;">
+            <div class="element" style="top: 40%; left: 25%;">
                 <button class="button-number" value="4">4</button>
             </div>
-            <div class="element" style="top: 45%; left: 50%;">
+            <div class="element" style="top: 40%; left: 45%;">
                 <button class="button-number" value="5">5</button>
             </div>
-            <div class="element" style="top: 40%; left: 70%;">
+            <div class="element" style="top: 40%; left: 65%;">
                 <button class="button-number" value="6">6</button>
             </div>
-            <div class="element" style="top: 55%; left: 35%;">
+            <div class="element" style="top: 55%; left: 30%;">
                 <button class="button-number" value="7">7</button>
             </div>
-            <div class="element" style="top: 55%; left: 65%;">
+            <div class="element" style="top: 55%; left: 60%;">
                 <button class="button-number" value="8">8</button>
             </div>
-            <div class="element" style="top: 65%; left: 45%;">
+            <div class="element" style="top: 65%; left: 40%;">
                 <button class="button-number" value="9">9</button>
             </div>
-            <div class="element" style="top: 65%; left: 55%;">
+            <div class="element" style="top: 65%; left: 50%;">
                 <button class="button-number" value="0">0</button>
             </div>
-            <button class="reload reload-button" title="Volver">Volver a menu</button>
+            <div class="text-area">
+                <button class="start" title="Empezar"></button>
+                <button class="reload reload-button" title="Volver">Volver a menu</button>
+            </div>
         </div>
         <div id="level-2" class="hidden">
             <div class="msg">
@@ -84,32 +87,32 @@
                 <button class="reload-button">Volver a menu</button>
                 <button class="serie-again">Jugar de nuevo</button>
             </div>
-            <div class="element" style="top: 40%; left: 20%;">
-                <button class="button-number" value="0"></button>
+            <div class="element" style="top: 40%; left: 15%;">
+                <button class="button-serie" value="0"></button>
                 <input class="hidden" type="text">
             </div>
-            <div class="element" style="top: 30%; left: 30%;">
-                <button class="button-number" value="1"></button>
+            <div class="element" style="top: 30%; left: 25%;">
+                <button class="button-serie" value="1"></button>
                 <input class="hidden" type="text">
             </div>
-            <div class="element" style="top: 20%; left: 40%;">
-                <button class="button-number" value="2"></button>
+            <div class="element" style="top: 20%; left: 35%;">
+                <button class="button-serie" value="2"></button>
                 <input class="hidden" type="text">
             </div>
             <div class="element" style="top: 20%; left: 55%;">
-                <button class="button-number" value="3"></button>
+                <button class="button-serie" value="3"></button>
                 <input class="hidden" type="text">
             </div>
             <div class="element" style="top: 30%; left: 65%;">
-                <button class="button-number" value="4"></button>
+                <button class="button-serie" value="4"></button>
                 <input class="hidden" type="text">
             </div>
             <div class="element" style="top: 40%; left: 75%;">
-                <button class="button-number" value="5"></button>
+                <button class="button-serie" value="5"></button>
                 <input class="hidden" type="text">
             </div>
-            <div id="text">
-                <p><button id="check">Aceptar</button></p>
+            <div class="text">
+                <p><button id="check"></button></p>
                 ¿CUÁL ES EL NÚMERO PARA COMPLETAR LA SECUENCIA
                 <div id="serie-text"></div>
             </div>

@@ -4,7 +4,6 @@
 
 #canvas {
   background-image: url(../img/back.png);
-  background-size: contain;
 }
 
 .element {
@@ -88,9 +87,25 @@
   font-weight: bold;
   border: none !important;
   outline: 0 !important;
+  overflow: visible;
 }
 
-.button-number:hover, .button-number:active {
+.button-serie {
+  display: block;
+  width: 100px;
+  height: 120px;
+  background-color: transparent !important;
+  background: url('../img/luciernaga.png') no-repeat center center;
+  font-size: 30px;
+  color: #000;
+  font-weight: bold;
+  border: none !important;
+  outline: 0 !important;
+  overflow: visible;
+  padding-top: 20px;
+}
+
+.button-number:hover, .button-number:active, .button-serie:hover, .button-serie:active {
   border: none !important;
 }
 
@@ -127,10 +142,10 @@
   width: 50px;
   position: absolute;
   top: 50px;
-  left: 15px;
+  left: 25px;
 }
 
-#text {
+.text {
   position: absolute;
   bottom: 100px;
   width: 100%;
@@ -140,6 +155,31 @@
   text-align: center;
 }
 
+.text-area {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+}
+
 .toolbar #stop-button {
   background-image: url('../img/activity-stop.png') !important;
+}
+
+.start {
+  color: #000;
+  border-radius: 50px;
+  padding: 20px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  background: #808080 url('../img/play.png') no-repeat center center;
+
+}
+
+#check {
+  border-radius: 50px;
+  padding: 20px;
+  background: #808080 url('../img/check.png') no-repeat center center;
 }
