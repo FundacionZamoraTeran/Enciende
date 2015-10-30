@@ -3,7 +3,7 @@
 }
 
 #canvas {
-  background-image: url(../img/back.jpg);
+  background-image: url(../img/back.png);
   background-size: contain;
 }
 
@@ -138,4 +138,8 @@
   font-size: 25px;
   font-weight: bold;
   text-align: center;
+}
+
+.toolbar #stop-button {
+  background-image: url('../img/activity-stop.png') !important;
 }
