@@ -60,11 +60,10 @@
   box-shadow: 0 2px #eb893d;
 }
 
-.reload-button {
-  float: left;
+.reload-button, .play-again, .serie-again, #text button {
   padding: 5px 8px 5px 8px;
   font-size: 20px;
-  margin: 0 5px 0 5px;
+  margin: 10px 5px 10px 5px;
 }
 
 .reload {
@@ -99,17 +98,17 @@
   background: url('../img/on.png') no-repeat center center !important;
 }
 
-#msg {
+.msg {
   width: 400px;
   margin: 10px auto 0 auto;
 }
 
-#msg h1 {
+.msg h1 {
   text-align: center;
   color: #fff;
 }
 
-#win {
+.win {
   background-color: #8fbd1c;
   position: relative;
   z-index: 1000;
@@ -119,7 +118,24 @@
   text-align: center;
   color: #fff;
   font-weight: bold;
-  padding: 100px;
+  padding: 80px;
   font-size: 20px;
   border-radius: 20px;
+}
+
+.element input {
+  width: 50px;
+  position: absolute;
+  top: 50px;
+  left: 15px;
+}
+
+#text {
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
 }
